@@ -1,0 +1,134 @@
+Model:
+  when it comes to Data Science is
+  The artifact created by the training process.
+
+-Weights
+-Probabilities
+-Regression data
+
+  The tree of the program.
+
+
+Algorithim:
+
+  A set of steps.
+
+  Making a PB and J
+
+
+Fitting: 
+
+  Finding the correct patter in the data.
+
+
+Feature:
+  
+  An individual measurable property or char of a phenomenon being observed
+  The historical data you are using in order to make a prediction.
+
+  Year Make Milage Fuel Repairs Services
+
+Label:
+  
+  The status or end goal would be the label in the car tree.
+  status: active or inactive     /end goal of predictiono
+
+  usually labels will be 0 or 1
+  
+  these will usually tell if an algorithim is supervised or unsupervised
+  So if they have a label they will usually fall under supervised algorithim. Because you are telling it was the end goal is.
+
+
+
+Regularization:
+
+    An approach for resolving problems with overfitting by discouraging complexity
+    (overfitting) packing too much data into your learning model.
+
+    reducing features that go into the model set.
+
+
+
+
+
+Model Paramters & Hyperparametrs 
+
+    Model Parmater:
+
+        The part of the model that is learned from historical training data.
+
+    Hyperparmameters:
+
+         A configuration that is external to the model and whos value cannot be estimated form data.
+         These are elements the model can't learn
+         k algorithim. Nearest neighbors. Not something the system generated automatically, but something weh ad to provide.
+
+
+
+
+Lazy Vs Eager Learning
+
+Lazy Learning: 
+
+  Builds model when asked to perform prediction. kNN
+  Great for dynamic data that changes frequently.
+  Doesn't work great if you have billions of data in your set.
+
+
+Eager Learning:
+  
+  Builds and stores model.
+  Popular: Neural Networks, Decision Tree, SVM
+
+
+
+Overfitting & Generalization
+
+Overfitting: 
+   
+   A model suffers from overfitting when it is incapable of generalizing.
+   Finding the right patterns to find the data you are seeking. (think of Happiness and Wealth graph)
+   Generalization is important
+
+
+
+Gaussian Distribution:
+
+   A bell shaped curve.
+   Also reffered to as a normal distribution.
+
+Used when creating a new marketing campaign at Pepsi.
+
+
+
+Generative vs Discriminative:
+
+   Generative: 
+
+     Model the distribution of individual classes.
+     For a hand writing it would create a model for every letter in the alphabet and then store that model. Then when it receives new input it would go and cross refference it.
+
+   Discriminative:
+   
+    Learns the hard or soft boundary between classes.
+    Tries to find key differences between each element.
+    Neural Network is a great case.
+    (think pitch reccomendation)
+
+
+    Vector machines also look found boundries between data points. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+Exception handling is a mechanism for stopping normal program flow and continuing at some surrounding contect or code block.
+
+Raise - interrupts program flow
+Handle - resume control
+Unhandled - terminate the program
+Exception Objects - contain info about the event.
+
+try:
+
+and 
+
+except block
+
+try:
+except ValueError:
+    print("Conversion failed!")
+return x
+
+
+Identation, Syntax, and name errors are program errors.
+Never catch these.
+
+
+pass is a noop that allows us to pass blocks that are empty
+

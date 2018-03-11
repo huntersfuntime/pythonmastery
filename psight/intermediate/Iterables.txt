@@ -1,0 +1,7 @@
+words = "Hey whats up hello".split()
+Creates a list
+
+List comprehension
+[len(words) for word in words]
+
+
