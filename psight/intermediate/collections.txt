@@ -1,0 +1,174 @@
+See length of tuple
+len()
+
+nested tuples.
+
+To create a single element tuple you need to use a comma
+k = (391,)
+
+e = ()      < empty tuple
+
+
+def minmax(items):
+    return min(items), max(items)
+
+
+Tuple unpacking.
+
+lower, upper = minmax([1,2,3,4,5,6])
+
+a, b = b, a
+
+Tuple constructor
+tuple("Carmichael")
+
+Strings
+
+"New" + "found" + "land"
+
+s = "new"
+s += "found"
+s += "land"
+s
+
+.join()
+.split()
+
+''.join(["Hi", "how"])
+
+
+Ranges
+
+list(range(0, 10, 2))
+print(list)
+
+range(5)    < stop 0,1,2,3,4
+range(5,10)                 < start, stop 5,6,7,8,9
+range(10,20,2)                                        < start,stop,step    10,12,14,16,18
+
+
+
+**********
+Enumerate
+
+t = [6, 272, 23232, 24242, 2323]
+for p in enumerate(t):
+    print(p)
+
+returns index of each
+(0, 6)
+(1, 372)
+(2, 8862)
+
+With unpacking you can do
+
+for i, v in enumerate(t):
+    print("i = {}, v={}".format(i, v))
+
+
+Lists
+
+a = [[1, 2], [1,2]]
+
+a[1]
+a[1].append(5)
+
+u = "jackadaws love my sphinx of quarts".split()
+
+del u[3]
+
+u.remove('jackdaws')
+
+u.insert(2, 'universite')
+' '.join(u)
+
+
+.sorted()
+reveresd()
+
+
+Dictionaries
+
+Keys immutable
+Values mutable
+
+dict() consturctor
+
+e = d.copy()          <- Copy function
+f.update(g)         < update method
+
+
+Set
+
+p = {6,34,55,334,343434}
+type(p)
+
+set()       set constructor
+
+used a lot to remove duplicates from an object.
+
+k.add(54)     < to add an element to a list. If you add a duplicate it will not show.
+
+k.remove(98)       < remove from a set. If not in it will throw an error.
+
+
+s.copy()       <- copy method
+
+Union method *** 
+
+ex.
+
+blue_eyes = {'Olivia', 'John', 'Jake', 'Hunter', 'Cersi'}
+blonde_hair = {'Cersi', 'Harry' 'Jake', 'Mia'}
+smell_hcn = {'Harry', 'Amelia'}
+taste_ptc = {'Hunter', 'Lily', 'Amelia'}
+o_blood = {'Hunter', 'Joshua', 'John'}
+b_blood = {'Cersi', 'Jake'}
+a_blood = {'Mia'}
+
+here is the union method called
+
+blue_eyes.union(blonde_hair)
+blue_eyes.union(blonde_hair) == blonde_hair.union(blue_eyes)
+
+
+set intersection
+
+blue_eyes.intersection(blonde_hair)          < have blonde hair and blue eyes
+
+
+Set difference
+
+blonde_hair.difference(blue_eyes)           < have blonde hair no blue eyes
+
+
+Symetric difference
+s.symmetric_difference()
+
+blonde_hair.symmetric_difference(blue_eyes)           < all the people that are one or the other.
+
+
+is Subset method
+
+smell_hcn.issubset(blonde_hair)        < checks to see if all the people of the first set are present in second set
+
+taste_ptc.issuperset(smell_hcn)
+
+a_blood.isdisjoint(o_blood)             < test if two sets have no members in common.
+
+
+
+
+
+Protocols
+
+Container
+Sized
+Iterable
+Sequence
+Mutable Sequence
+Mutable Set
+Mutable Mapping
+
+
+
