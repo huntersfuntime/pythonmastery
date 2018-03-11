@@ -1,0 +1,103 @@
+See length of tuple
+len()
+
+nested tuples.
+
+To create a single element tuple you need to use a comma
+k = (391,)
+
+e = ()      < empty tuple
+
+
+def minmax(items):
+    return min(items), max(items)
+
+
+Tuple unpacking.
+
+lower, upper = minmax([1,2,3,4,5,6])
+
+a, b = b, a
+
+Tuple constructor
+tuple("Carmichael")
+
+Strings
+
+"New" + "found" + "land"
+
+s = "new"
+s += "found"
+s += "land"
+s
+
+.join()
+.split()
+
+''.join(["Hi", "how"])
+
+
+Ranges
+
+list(range(0, 10, 2))
+print(list)
+
+range(5)    < stop 0,1,2,3,4
+range(5,10)                 < start, stop 5,6,7,8,9
+range(10,20,2)                                        < start,stop,step    10,12,14,16,18
+
+
+
+**********
+Enumerate
+
+t = [6, 272, 23232, 24242, 2323]
+for p in enumerate(t):
+    print(p)
+
+returns index of each
+(0, 6)
+(1, 372)
+(2, 8862)
+
+With unpacking you can do
+
+for i, v in enumerate(t):
+    print("i = {}, v={}".format(i, v))
+
+
+Lists
+
+a = [[1, 2], [1,2]]
+
+a[1]
+a[1].append(5)
+
+u = "jackadaws love my sphinx of quarts".split()
+
+del u[3]
+
+u.remove('jackdaws')
+
+u.insert(2, 'universite')
+' '.join(u)
+
+
+.sorted()
+reveresd()
+
+
+Dictionaries
+
+Keys immutable
+Values mutable
+
+dict() consturctor
+
+e = d.copy()          <- Copy function
+f.update(g)         < update method
+
+
+
+
+

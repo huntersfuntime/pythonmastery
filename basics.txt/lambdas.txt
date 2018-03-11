@@ -1,0 +1,14 @@
+Still a function.
+A tool that allows you to wrap up a function, usually a smaller function, and easily pass it to another function.
+
+Wrap up some small behavior and pass it to other functions.
+
+full_name = lambda first, last: f'{first} {last}'
+
+print(full_name('Hunter', 'Orges'))
+
+def greeting(name):
+  print(f'Hi there {name}')
+
+
+greting(full_name('Hunter', 'Orges'))

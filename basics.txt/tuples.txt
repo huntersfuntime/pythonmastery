@@ -1,0 +1,71 @@
+Similar to lists. With some differences. 
+
+A list uses brackets []
+Dictionairy {}
+Tuple ()
+
+People use tuples for unpacking.
+
+So like title, sub_heading, content = post
+
+Unpacking can be used when building a list, but you usually would not do that because lists are mutable. Where a tuple is not.
+
+So do you want it to be mutable or be immutable? 
+
+Can't sort a tuple. So keeps the order of the content you want. Think about a title, and subheading. You wouldn't want them switched.
+
+
+Introduction to Python Tuples # 1397
+
+# List: []
+# Dictionary: {}
+# Tuple: ()
+
+# Tuple: immutable 
+# List: mutable
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+# Tuple unpacking
+title, sub_heading, content = post
+
+# Equivalent to Tuple unpacking
+# title = post[0]
+# sub_heading = post[1]
+# content = post[2]
+
+print(title)
+print(sub_heading)
+print(content)
+
+
+How to Add Elements to a Tuple by Leveraging Re-Assignment # 1398
+
+ID shows you where at in memory the object is or tuple.
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+print(id(post))
+print(id(post))
+
+post += ('published',)
+
+print(id(post))
+
+title, sub_heading, content, status = post
+
+print(title)
+print(sub_heading)
+print(content)
+print(status)
+
+
+
+Working with Lists Nested in Tuples # 1399
+
+post = ('Python Basics', 'Intro guide to Python', 'Some cool python content')
+
+tags = ['python', 'coding', 'tutorial']
+
+post += (tags,)
+
+print(post[-1][1])

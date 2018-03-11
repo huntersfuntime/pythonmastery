@@ -1,0 +1,42 @@
+Allows you to generate a probability between two potential outcomes.
+
+You really focus on the two potential outcomes.
+
+Category: regression and classification
+
+Dichotomous variable: Can only have a maximum of two outcomes.
+
+Use cases:
+
+- Image classification
+- Medical diagnosis
+- Political predictions
+- Sales predictions
+- Component inside of a neural net
+
+So for example in a neural network if they think a letter is either an I or an L linear regression is a great component to determine what it is.
+
+Pros:
+-Very fast
+-Inutuitive predictions
+-Can be integrated into nerual networks
+
+Cons:
+-Requires many pre-processing tasks
+-More complex math
+
+
+Case Study:
+Predicting cancer in medical patients
+
+White blood cell count. 
+THere are only two different statuses we are looking at.
+cancer, or not_cancer.
+
+These tend to like working with numberic values, so 0 or 1.
+
+Run function for prediction.
+
+Uses sigroid function.
+Creates a curved line instead of a straight line. Then allows you to place the datapoint in a much more accurate value.
+

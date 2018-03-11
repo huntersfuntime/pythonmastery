@@ -1,0 +1,102 @@
+
+
+product_id = 123   integer data type (whole number)
+
+
+sale_price = 14.99 floating point data type. (type of decimal that is not percise)
+
+tip_percentage = 1/5 
+print(tip_percentage)
+
+new_product = 150
+
+print(sale_price + new_product)
+Can take two different number data types and combine them into a float.
+
+
+
+
+total = 100
+
+total = total + 10
+total += 10
+total -= 10
+total *= 2
+total /= 10
+total //= 10
+total **= 2
+total %= 2
+
+product_two = 120
+product_three = 10
+
+total += product_two
+total += product_three
+
+print(total)
+
+
+
+Floats and Decimals
+
+from decimal import Decimal
+
+product_cost = 88.40
+commission_rate = 0.08
+qty = 450
+
+product_cost += (commission_rate * product_cost)
+print(product_cost * qty) # 42962.4
+
+product_cost = Decimal(88.40)
+commission_rate = Decimal(0.08)
+qty = 450
+
+product_cost += (commission_rate * product_cost)
+print(product_cost * qty) # 42962.40000000000282883716451
+
+
+
+How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python # 1375
+
+
+from decimal import Decimal
+
+product_cost = 88.80
+commission_rate = 0.08
+qty = 450
+
+print(int(product_cost))
+print(float(qty))
+print(Decimal(product_cost))
+print(complex(commission_rate))
+
+
+
+Absolute value takes away the -. Just gives the absolute value. Get it ? good.
+
+Math.floor shows your intention. So int is easier. But this is just more explicit on your intentions as you are coding. So if you want the floor value when you say math.floor people are understanding that you wanted the lower value of the product cost. Even though int the value is the same the intention is not as clear.
+
+Math.ceil will give the rounded up value. So opposite of floor.
+You can also combine. So
+
+absolute value plus floor. 
+
+
+
+Overview of Popular Math Functions in Python # 1376
+
+import math
+
+loss = -20.25
+product_cost = 89.99
+
+print(abs(loss))
+print(math.floor(product_cost))
+print(math.ceil(product_cost))
+print(abs(math.floor(loss)))
+print(round(product_cost))
+print(math.sqrt(product_cost))
+print(math.pow(5, 2))
+print(5 ** 2)
+

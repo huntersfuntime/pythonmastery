@@ -1,0 +1,87 @@
+String Interpolation.
+Very rare that you will have hard coded strings in your appliction.
+
+f is format flag
+
+name = 'Kristine'
+product = 'Python elearning course'
+
+email_content = f"""
+Hi {name}
+
+Thank you for purchasing {product}
+
+Regards,
+
+Sales Team
+"""
+
+print(email_content)
+
+
+
+How to Use Python's format method to Implement Index Based String Interpolation # 1362
+
+Does not use this much anymore. But be aware of it and what it does.
+
+
+name = 'Kristine'
+age = 12
+product = 'Python eLearning course'
+from_account = 'Jordan'
+
+greeting = "Product Purchase: {2} - Hi {0}, you are listed as {1} years old. - {3}".format(name, age, product, 'Jordan')
+
+greeting = f"Product Purchase: {product} - Hi {name}, you are listed as {age} years old. - {from_account}"
+
+print(greeting)
+
+QUERY IN A STRING>
+
+.index can break your whole site if it turns false. Because it throws the error. That is why you use in. 
+
+
+sentence = 'The quick brown fox jumped over the lazy dog.'
+
+query = sentence.find('oops')
+query_two = sentence.index('oops')
+
+print(query)
+print(query_two)
+
+query = 'oops' in sentence
+
+print(query)
+
+
+Using Python's replace Function to Find and Replace String Values # 1364
+When a string is immutable, this is what you will use to replace.
+
+
+
+sentence = 'The quick brown fox jumped over the lazy dog.'
+
+sentence = sentence.replace('quick', 'slow')
+
+print(sentence.replace('quick', 'slow'))
+print(sentence)
+
+
+Using a Negative Index with a Python String # 1365
+
+sentence = 'The quick brown fox jumped over the lazy dog.'
+
+print(sentence[-4:])
+
+
+Overview of Python's strip, lstrip, and rstrip Functions # 1366
+
+url = 'https://google.com'
+
+print(url.strip('https://'))
+
+url = url.lstrip('https://')
+url = url.rstrip('.com')
+
+print(url.capitalize())
+

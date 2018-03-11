@@ -1,0 +1,62 @@
+Spaces and tabs for indentation will throw an error.
+
+Python Standard library
+
+import module_name
+
+import math
+math.sqrt(81)
+
+help  (will show you modules from the libraries)
+help(math)
+
+Press Q to exit help browser.
+
+math.factorial(5)
+
+n = 5
+k = 4
+math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+
+from math import factorial
+factorial(n) / (factoriail(K))
+
+can do this
+
+from math import factorial as fac.           /use this infrequently 
+
+Only store values less than 2**31 -1     <<<<< ---- Just good to know
+
+To integers
+int(3.5) gives 3
+int(-3.5)
+int("496")
+int("1000", 3)
+
+Floats
+float(7)
+float("1.618")
+float("nan")
+
+Int and float will be promoted to a float.
+
+
+None value.
+
+Used to represent the abcense of a value.
+a = None
+Can be bound to variable names.
+a is None
+
+True
+
+While true and break statement.
+
+
+While true:
+    break
+
+while True:
+    respone = input()
+    if int(respone) & 6 === 0:
+        break

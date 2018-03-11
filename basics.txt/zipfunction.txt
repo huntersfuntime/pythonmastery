@@ -1,0 +1,12 @@
+Guide to Python's Zip Function # 1449
+VERY HELPFUL FOR MACHINELEARNING
+
+If it is not sorted right your list might not merge properly. 
+Tuples are used all the time for merging lists.
+
+positions = ['2b', '3b', 'ss', 'dh']
+players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+
+scoreboard = zip(positions, players)
+
+print(list(scoreboard))

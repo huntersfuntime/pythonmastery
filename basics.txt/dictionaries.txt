@@ -1,0 +1,177 @@
+Overview of Python Dictionaries # 1389
+
+players = {
+  "ss": "Correa",
+  "2b": "Altuve",
+  "3b": "Bregman",
+  "DH": "Gattis",
+  "OF": "Springer",
+}
+
+Look up a value based off the key
+players['2b']
+second_base = players['2b']
+designated_hitter = players['DH']
+
+print(designated_hitter)
+
+
+Guide to Nested Collections in Python Dictionaries # 1390
+
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+}
+
+astros = teams['astros']
+print(astros)
+print(teams['angels'])
+print(teams['yankees'])
+
+
+How to Add New Key/Value Pairs to Python Dictionaries # 1391
+
+Usually keep your keys simple as possible, they are strings, so you can put a space in it or numbers or anything you can put in a string. BUt it is best to keep it simple. 
+
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+}
+
+teams['red sox'] = ['Price', 'Betts']
+
+print(teams)
+
+Guide to Using the get Function in Python Dictionaries to Configure Fallback Lookup Values # 1392 
+
+
+Sometimes it is best to have a default funciton so it doesn't break your program. So we pass the function get.
+
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ['Price', 'Betts'],
+}
+
+featured_team = teams.get('yankees', 'No featured team')
+
+print(featured_team)
+
+
+
+Guide to Python Dictionary View Objects # 1393
+Probably watch this guide again
+
+Thread safe programs. So basically if you make an inquiry on a dictionary and someone else is changing it at that time, it will show up with the change. Or what you can do is by making a copy. That way it doesn't and it is thread safe.
+
+players = {
+  "ss" : "Correa",
+  "2b" : "Altuve",
+  "3b" : "Bregman",
+  "DH" : "Gattis",
+  "OF" : "Springer",
+}
+
+player_names = list(players.copy().values())
+
+teams = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angels":  ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ["Price", "Betts"],
+}
+
+team_groupings = teams.items()
+
+"""
+[
+  ('astros', ['Altuve', 'Correa', 'Bregman']),
+  ('angels', ['Trout', 'Pujols']),
+  ('yankees', ['Judge', 'Stanton']),
+  ('red sox', ['Price', 'Betts'])
+]
+"""
+
+print(list(team_groupings)[1][1][0])
+
+Overview of the Multiple Methods for Deleting Items in a Python Dictionary # 1394
+
+teams = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angels":  ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ["Price", "Betts"],
+}
+
+del teams['angels']
+removed_team = teams.pop('mets', 'Team not found')
+
+print(teams)
+print(removed_team)
+
+Guide to Working with Lists of Nested Dictionaries # 1395
+
+teams = [
+  {
+    'astros': {
+      '2B': 'Altuve',
+      'SS': 'Correa',
+      '3B': 'Bregman',
+    }
+  },
+  {
+    'angels': {
+      'OF': 'Trout',
+      'DH': 'Pujols',
+    }
+  }
+]
+
+# print(teams[0])
+
+angels = teams[1].get('angels', 'Team not found')
+
+print(list(angels.values())[1])
+
+
+
+SLICING
+When you slice a tuple, it comes back with a tuple. So it doesn't change the data structure.
+
+post = ('Python Basics', 'Intro guide to Python', 'Some cool python content', 'published')
+
+print(post[1::2])
+
+
+Three Ways to Remove Elements from a Python Tuple # 1401
+
+The reason you would be doing this is if you are not the one creating the tuple. So if you were working with an outside library, and needed to remove some element from the middle of it. This is where you would impliment the third method. But if you are the one creating the tuple and are needing to remove and add items constantly to the collection, then you need to ask yourself if you should just be using lists. Since lists are mutable. 
+
+post = ('Python Basics', 'Intro guide to Python', 'Some cool python content', 'published')
+
+# Removing elements from end
+post = post[:-1]
+
+# Removing elements from beginning
+post = post[1:]
+
+# Removing specific element (messy/not recommended)
+post = list(post)
+post.remove('published')
+post = tuple(post)
+
+print(post)
+
+
+How to Use a Tuple as a Dictionary Key in Python # 1448
+
+priority_index = {
+  (1, 'premier'): [1, 34, 12],
+  (1, 'mvp'): [84, 22, 24],
+  (2, 'standard'): [93, 81, 3],
+}
+
+print(list(priority_index.keys()))

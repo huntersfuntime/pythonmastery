@@ -1,0 +1,20 @@
+To define a variable like ruby it is 
+
+name = "Hunter"
+post_count = 42
+
+variables are snake case like above
+never name a variable like this
+PostCount because it is how something else is named.
+
+Pep8 is the official style guide for python code.
+
+simple variables like
+x and y are bad naming conventions..
+
+better example would be
+
+num_one
+num_two
+
+Creator of rails keeps a thesaraus for naming conventions 

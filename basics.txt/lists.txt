@@ -1,0 +1,152 @@
+Overview of Lists in Python # 1377
+
+Lists in python are also not immutable.
+So you can add to it.
+
+users.insert(0, 'Hunter' ) 0 is just the index of where you want to place it.
+
+When the items are in [] it is still considered a list. But when you query a specific inside the list, it returns whatever object it is. Unless you wrap it. print([users[2]])
+
+Can't change the strings still. So when you are changing the string Ian to Brayden, you are just reassigning the element to a different object. Ian is not actually being changed.
+
+
+
+"""
+User Database Query
+Kristine
+Tiffany
+Jordan
+"""
+
+users = ['Kristine', 'Tiffany', 'Jordan']
+
+print(users)
+
+users.insert(1, 'Anthony')
+
+print(users)
+
+users.append('Ian')
+
+print(users)
+
+print([users[2]])
+
+users[4] = 'Brayden'
+
+print(users)
+
+
+Three Ways to Remove Elements from a Python List # 1378
+
+.pop() will actually take it out and allow you to use it.
+
+
+users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+
+print(users)
+
+users.remove('Jordan')
+
+print(users)
+
+popped_user = users.pop()
+
+print(popped_user)
+print(users)
+
+del users[0]
+
+print(users)
+
+
+
+Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List # 1379
+
+Whenever you have a mixed list you have to be super careful with datatypes, because if you have integers and try to add, with a string in it. It can break your program.
+
+users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+
+ids = [1, 2, 3, 4]
+
+mixed_list = [42, 10.3, 'Altuve', users]
+
+print(mixed_list)
+
+user_list = mixed_list.pop()
+
+print(user_list)
+print(mixed_list)
+
+nested_lists = [[123], [234], [345]]
+
+
+
+Overview of Python List Query Processes: len(), Negative Indexes, and index() # 1380
+
+careful with len because it counts the actual number and doesn't start at zero, and a lot of developers have an off by one error. You need to be careful for them.
+
+tags = ['python', 'development', 'tutorials', 'code']
+
+number_of_tags = len(tags)
+last_item = tags[-1]
+index_of_last_item = tags.index(last_item)
+
+print(number_of_tags)
+print(last_item)
+print(index_of_last_item)
+
+
+How to Sort Lists in Python # 1381
+
+tags = ['python', 'development', 'tutorials', 'code']
+
+print(tags)
+
+tags.sort()
+
+print(tags)
+
+tags.sort(reverse=True)
+
+print(tags)
+
+totals = [234, 1, 543, 2345]
+
+totals.sort(reverse=True)
+
+print(totals)
+
+
+Using the join Function in Python to Build a URL Query String # 1382
+
+# https://www.google.com/search?q=python+development+tutorial
+
+uri = 'https://www.google.com/search?q='
+tags = ['python', 'development', 'tutorial']
+formatted_tags = '+'.join(tags)
+query_uri = f'{uri}{formatted_tags}'
+
+print(query_uri)
+
+
+How to Add to a List in Python with Both In Place and Copy Processes # 1388
+
+tags = ['python', 'development', 'tutorials', 'code']
+
+# Nope
+tags[-1] = 'Programming'
+
+# In Place
+tags.extend('Programming')
+tags.extend(['Programming'])
+
+# New List
+new_tags = tags + ['Programming']
+
+print(new_tags)
+
+print(tags
+
+
+

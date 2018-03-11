@@ -1,0 +1,128 @@
+For in loops:
+
+Will let all the gumballs out until it is done.
+
+
+While loops:
+
+Continue as many times as you want it to go. So if there are 250 gumballs, even after going through the gumballs it will keep spinning the knob. (infinite loop can happen)
+
+
+Use a for in loop 95% of the time. But good to know both options.
+
+How to Implement Python Loops for Lists, Tuples, and Dictionaries # 1473
+
+
+Python does force you to use indentation for code blocks.
+
+What you define for in the loop doesn't matter the name. So when player it can be x if you wanted. But if you have players, it should be named player for best practices.
+
+
+How to Implement Python Loops for Lists, Tuples, and Dictionaries # 1473
+
+Really remember indenting.
+
+
+players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
+
+for player in players:
+  print(player)
+
+players = {
+  '2b': 'Altuve',
+  '3b': 'Bregman',
+  'ss': 'Correa',
+  'dh': 'Gattis'
+}
+
+for position, player in players.items():
+  print('Position', position)
+  print('Player', player)
+
+
+How to Loop Through the Characters of a Python String # 1474
+
+alphabet = 'abcdef'
+
+for letter in alphabet:
+  print(letter)
+
+
+  Guide to Looping Over Ranges in Python # 1475
+
+
+for num in range(1, 10):
+  print(num)
+
+for num in range(1, 10, 2):
+  print(num)
+
+
+
+  Guide to Continue and Break in Python Loops # 1476
+
+
+  usernames = [
+  'jon',
+  'tyrion',
+  'theon',
+  'cersei',
+  'sansa',
+]
+
+for username in usernames:
+  if username == 'cersei':
+    print(f'Sorry, {username}, you are not allowed')
+    continue
+  else:
+    print(f'{username} is allowed')
+
+for username in usernames:
+  if username == 'cersei':
+    print(f'{username} was found at index {usernames.index(username)}')
+    break
+  print(username)
+
+
+
+Overview of While Loops in Python # 1477
+
+
+nums = list(range(1, 100))
+
+while len(nums) > 0:
+  print(nums.pop())
+
+def guessing_game():
+  while True:
+    print('What is your guess?')
+    guess = input()
+
+    if guess == '42':
+      print('You correctly guessed it!')
+      return False
+    else:
+      print(f"No, {guess} isn't the answer, please try again\n")
+
+guessing_game()
+
+
+How to Combine and Flatten Lists in Python with the For / In Loop # 1478
+
+legacy_customers = ['Alice', 'Bob']
+new_customers = ['Tiffany', 'Kristine']
+
+raw_db = [legacy_customers, new_customers]
+
+print(raw_db)
+
+for legacy_customer in legacy_customers:
+  new_customers.append(legacy_customer)
+
+print(new_customers)
+
+
+
+
+  

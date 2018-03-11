@@ -1,0 +1,31 @@
+Functions in a class are called methods
+
+class Student:
+
+student = Student()           Creating an instance of a class 
+
+mark = Student("Hunter")       special methods are only available in classes (constructor method is one)
+
+self method. refers to the instance of the class.
+
+__init__ constructor method
+
+
+def __str__(self):
+    return "Student". will override method in object.
+
+Class attributes or setters are not defined to self or instance they are static.
+
+print(Student.school_name)
+
+
+
+Inheritance and polymorphism. Tying things together.
+So inheriting the behavior of the student class but create a new class from it called high school student.
+
+super() method
+
+import on files.
+
+
+Instance attributes in classes become dictionaries automatically

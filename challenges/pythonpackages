@@ -1,0 +1,19 @@
+Python Package Section Project Requirement # 1512
+
+Build out a webscraper.
+
+
+Go onto dailysmarty
+
+Pull the posts from daily smarty
+
+Only grab the links that are to posts
+
+restructure the title so that it becomes an actual title
+
+
+Packages to use.
+
+- requests
+- inflection
+- beautifulsoup

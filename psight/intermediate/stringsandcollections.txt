@@ -1,0 +1,36 @@
+\n      to escape "" 
+
+escape a backslack by itself is to do \\ just like {{}}
+
+raw strings don't support and string fixes. So to do a raw string starat with r.
+
+r'some string blah blah blha'
+
+You can actually see all the methods from your command line if you want to.
+
+
+
+
+Bytes are like strings.
+They are sequences of bytes.
+b'data'
+b"data"
+
+d = b'some bytes'
+d.split
+
+.encode
+.decode
+
+
+Lists are sequences of objects.
+[a, b, c, d, e]
+a[1]
+a[1] = 'H'
+
+b = []
+b.append(1.618)
+
+It is useful to create an empty list.
+
+

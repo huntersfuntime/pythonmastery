@@ -1,0 +1,105 @@
+
+
+This fits in supervised learning and classification.
+
+What is it?
+
+Text classification is one of most popular uses.
+
+A naive bayes classifier is an algorithm that uses Bayes' theorem to classify objects. Naive Bayes classifiers assume strong, or naive, independence between attributes of data points.
+
+- Techopedia
+
+
+You combine a number of elements and you combine all their probabilities. 
+
+It looks through an entire set of data (blog post, email) instead of trying to draw a full set of connections, it takes each variable, and looks at each one as being completely disconnected from all the rest of the data.
+
+
+
+Use cases
+
+Search Engines
+(google)
+
+Reccomendation Engines
+(Amazon reccomended products)
+
+Spam Filtering
+
+
+
+Pros
+
+-Very fast:
+because the math is pretty basic. The math can run fast.
+
+- Effective, even with small data sets:
+Many machine algorithims need a lot of data for them to work. For example neural networks.
+
+- Straightfoward to understand:
+makes it easier to implement
+
+Cons
+
+-Naive:
+Which means you have to have domain knowledge on whatever you are working in.
+
+-Assumes all features are independent:
+It can be a negative because you will run into a lot of situations where they are things are connected. Like if you are trying to find relationships between people for example facebook or twitter, because it might not look at the relationships aswell as it should.
+
+
+
+Case Study. 
+
+Building a spam filter.
+
+
+- Tokenization
+- Removal of stop words
+-Stemming
+- Probability index
+nested in that is
+
+- Train step
+- Prediction Step.
+
+
+1. Tokenization:
+Rips apart the content. Splits the content into pieces. Viagra. for. Cheap. Makes it a list basically. Then stores it as there own independent variables.
+
+Counts all of them. Sees what occurs and how many times.
+
+Just trying to figure out what the overall subject matter is of the email.
+
+Removes all the stop words (Doesn't help us discover what the content is about)
+
+2. Stemming:
+Takes a root key word, such as discount. Any other words like discounted discounting discounts, get grouped inside the discount word.
+
+Chops off the types of letters (so sometimes is wrong) the trade off is speed. Allows us not have to count all the different discounts dicounting in the same email. Just makes it all one word.
+
+
+3. Training:
+
+Going to run Naive base over the entire database of emails we have. 
+
+You build out a very typical set. That give the best prediction. So for your own programs, you test out a number of test data sets to see what works best for you. 
+
+Ok if there are these kinds of words, say that the probability is going to be hire that it is spam. Trying to answer the question of what is it? Is this spam?
+
+Run the data set through our training data.
+
+Then we look at our email. The one we have a question on.
+
+We run it through and say this email with all the tokenized words, does this resemble the emails that we historically marked as spam? Or the ones we placed in the inbox?
+
+Runs the new email through the data. THen based off the propbability it marks it and gives it the reccomendation.
+
+
+(Notes for pondering) So could marketers and spammers just create different types of emails that won't be marked as spam? Smarter emails?
+
+
+
+
+

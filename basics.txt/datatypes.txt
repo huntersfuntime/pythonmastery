@@ -1,0 +1,44 @@
+Booleans
+Numbers
+Strings
+Bytes and byte arrays
+None
+Lists
+Tuples
+Sets
+Dictionaries
+
+Can store each data type in a variable.
+
+None you would use if you don't want to define the variable. With a form each value with be none, but once a value is typed in, you can swipe it with a string or integer.
+
+Lists are similar to an array.
+
+Dictionaries are like hashes.
+
+
+
+meal_completed = True
+meal_completed = False (they use capitalize)
+
+sub_total = 100
+tip = sub_total * 0.2
+print(sub_total)
+total = sub_total + tip
+print(total)
+receipt = "Your total is " + str(total)
+print(receipt)
+
+
+How to change variable values.
+
+first = 'Springer'
+second = 'Bregman'
+third = 'Altuve'
+
+print(second)
+second = 'Hunter'
+
+print(second)
+
+Swapping out the values and overriding them.

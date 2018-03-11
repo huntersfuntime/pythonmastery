@@ -1,0 +1,83 @@
+Overview of kNN Algorithm # 1459
+
+k Nearest Neighbors
+
+Data classification is the use for this.
+
+can take in a set of inputs
+and generate a specific class.
+
+Analyzes and tells you exactly where a new element can be placed inside a system.
+
+
+"KNN is a non-parametric, instance-based and used in a supervised learning setting" - Kevin Zakka
+
+
+Non parametric : is not required to follow normal distribution rules. 
+
+It doesn't have a requirement for specific math problems. Forces you as a machine developer to develop it. Find what distance you are searching for that sets the distribution between all elements.
+
+We are not going to use some formal statistic metric to see the whole distance.
+
+Instance based: does not store a model of the training set.
+A lot of algorithims will take in data and make a a new data set with what it knows. Where this will just go through the data, not copy it, but predict from there. (doesn't build a model)
+
+
+Some popular uses:
+
+Banking Systems
+
+Weather predictions
+
+Sports analysis 
+
+
+
+
+Pros :
+-Straightforward to learn (very easy to visualize)
+-Adherence to cleary defined patterns
+
+Cons :
+- Poor performance (because it is instance based)
+tries to run the entire system everytime you call on the algorithim
+
+- Arbitrary selection of K can lead to inaccurate predictions
+- High level of domain knowledge is required
+- Requires large amounts of data
+
+
+Case study: Building a loan approval engine
+
+Process
+
+Preprocessing : 
+Take in data than you can change the values so they fit in the algorithm. Everyting from converting strings to ints. Or if you have any empty value for income, it doesn't reject someone, so it pulls in an average based off other charecteristics.
+
+Convert data to vector: Take in some type of data elements. Combine it, so you can have a simple score.
+
+Build training data:
+
+Prediction made on most similar data points: 
+green thumbs up vs red thumbs down.
+
+
+Then prediction with k = 5
+
+k=5
+
+K represents class. Spelled with a Klass when not programming. 
+knn works by you providing an arbitrary k.
+
+Our alg will go through the history of our data (loans) find the 5 closest loans to our new applicant. So for example credit score, income etc. Check who is closest to it. Than make a prediction off that.
+
+k=3 instead of 5. Bring me the closest 3 to the loan applicant.
+
+
+
+
+
+
+
+
+

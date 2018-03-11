@@ -1,0 +1,73 @@
+ML 
+DS
+Flask
+Django are all packages you can call. The connector you use is pip.
+
+
+How to Create a Custom Module and Import It In the Python 
+
+How to import a built in library.
+pyth3
+
+import math
+
+
+Create a custom module, and bring it in intself.
+
+Remember how to create your own module and import it.
+
+import helper
+
+helper.greeting('Hunter', 'Orges')
+
+
+How to Import a Custom Python Module into Another File # 1500
+
+mv to move a file.
+So mv helper.py libs/helper
+
+Once it is in a different directory. You have to import it a different way. 
+
+import sys
+sys.path.insert(0, './libs')
+
+import helper
+
+
+How to Import a Single Function from a Python Module # 1501
+
+from math import sqrt
+
+sqrt(4)
+
+import sys
+sys.path.insert(0, './libs')
+from helper import greeting
+
+def render():
+    print(greeting('Tiffany', 'Hudgens'))
+
+
+render()
+
+This gets rid of the need to specificly says from helper.greeting.
+
+
+
+How to Import a Module and Assign an Alias in Python # 1505
+
+
+import sys
+sys.path.insert(0, './libs')
+import helper as h
+
+def render():
+    print(h.greeting('Tiffany', 'Hudgens'))
+
+
+render()
+
+
+import math as m
+
+m.sqrt(4)

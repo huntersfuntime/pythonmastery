@@ -1,0 +1,47 @@
+Neural Network
+Complex classification
+
+
+Use cases.
+
+Self driving cars:
+
+Complex reccommendation engines:
+
+Image recognition:
+(when you want)
+Not only need to classify hand writing but need to process hand writing in many different languages. 
+
+Natural language processing (NLP):
+Alexa, Google Home, etc.
+
+Whenever you ask siri what the weather in your hometown is, it uses nlp. But it gets routed through a network that processes your speach patterns, rip apart the words you say, guess your intention, make a prediction, then give a reccomendation.
+
+Pros
+
+- Incredibly Powerful: 
+
+- Simple to implement*
+but not always simple to implement the right way.
+
+Tensor flow is one most popular out there. Does not require much work on your side. 
+
+Cons
+
+- Resource intensive: 
+
+needs to run on outside systems. Need to have a entire network of servers that are all connected. Can't typically run it on a single computer or server. Usually require a GPU not CPU.
+
+Very expensive for hardware.
+
+- Black Box:
+
+Leaves you a little blind to understanding how something is occuring, because it doesn't give the the factor tree that shows you why it made the decisions it did.
+
+
+
+- Slow performance: 
+
+
+
+Neural network and the astros hitting

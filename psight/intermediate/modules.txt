@@ -1,0 +1,20 @@
+__name__
+
+double underscore. print(__name__)
+
+if __name__ = '__main__':
+   fetch_words()
+
+
+Python execution module
+
+Setting up a main function main()
+
+""" Documenting your code """
+
+Shebang 
+#!/usr/bin/env python3
+Tells the correct location interpreter version.
+
+
+import module_name.py into repl

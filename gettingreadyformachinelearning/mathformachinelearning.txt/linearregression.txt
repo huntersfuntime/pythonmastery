@@ -1,0 +1,43 @@
+This is answers What should it be?
+
+One of the most fundamentals.
+
+On a high level, this establishes associations and make predictions.
+
+Variables are simply data points.
+
+Explanatory variables: Also referred to as the independent variable. It explains the dependent variable and is plotted horizontally on a graph.
+
+Dependent variables: relies on the explanatory/independent variable to assist with prediction and is plotted vertically on a graph.
+
+
+Use cases
+
+- Home prices
+- Salaries
+- Medical diagnosis associations
+
+Not typically used by iteself for medical diagnosis, but is typically used in it with other things.
+
+Pros:
+
+-Straightforward to learn
+-Solid Performance
+-Can be accurate for lienar based data
+
+Cons:
+
+-Poor accuracy is data is not truly associated
+-Does not work for non-linear relationships
+-Sensitive to outliers
+-Requires independence of data
+
+
+Case Study
+Estimating baseball player salaries
+
+Need to have some level of domain expertise.
+
+Think about BA Avg, OPS, and WAR. Think about the salary of the players and which made sense. Which was more linear?
+
+Make sure you pick the right data points.

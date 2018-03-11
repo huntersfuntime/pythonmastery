@@ -1,0 +1,27 @@
+Ternary Operators
+You can just not just like !=
+
+You can replace a word in a string by using index.name[0]='Aquaman' just like js objects
+
+Add to an existing list with append.
+
+Check if something is in a string.   "Batman" in string
+
+delete from a list
+del student_names[2]
+
+len(student_list)
+
+
+To call something from a dictionary. 
+sutdent.keys()
+student.values()         -> these will give you all the keys or values in a dictionary.
+
+
+
+Lambda functions are used when nesting a function in a function
+
+double = lambda x: x * 2.   exact same as putting
+def double(x):
+     return x * 2
+

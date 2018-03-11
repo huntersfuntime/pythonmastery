@@ -1,0 +1,151 @@
+Can store procedures from any other part of your application.
+
+Input, the function itself, then the output.
+
+These just make so you can only make one change without having to duplicate code.
+
+
+
+Functions are one of the most important things when building out a program.
+
+Functions are snake case just like variables.
+
+def full_name(first, last):
+  print(f'{first} {last}')
+
+
+full_name('Kristine', 'Hudgens')
+
+def auth(email, password):
+  if email == 'kristine@hudgens.com' and password == 'secret':
+    print('You are authorized')
+  else:
+    print('You are not authorized')
+
+
+auth('kristine@hudgens.com', 'asdf')
+
+def hundred():
+  for num in range(1, 101):
+    print(num)
+
+
+hundred()
+
+def counter(max_value):
+  for num in range(1, max_value):
+    print(num)
+
+
+counter(501)
+
+
+What Does it Mean to Return a Value from a Python Function? # 1488
+
+Returning something from a function is different from printing a value.
+
+How to Nest Functions in Parent Functions in Python # 1489
+
+Print is just really used for debuging. So in a real world program usually you will return values.
+
+def greeting(first, last):
+  def full_name():
+    return f'{first} {last}'
+
+  print(f'Hi {full_name()}!')
+
+
+greeting('Kristine', 'Hudgens')
+
+
+When should you choose to nest? Whenever you have a function that does not need to exist outside a parent function than that is when you nest.
+
+
+How to Utilize Named Function Arguments in Python # 1491
+
+def full_name(first, last):
+  print(f'{first} {last}')
+
+
+full_name('Kristine', 'Hudgens')
+full_name(first = 'Kristine', last = 'Hudgens')
+full_name(last = 'Hudgens', first = 'Kristine')
+
+
+Named arguments can be in an optional matter. Where in Ruby you would have to make some code changes.
+
+All functions can used named or pure position arguments. If there are more than two named argumetns I will use position arguments. "Jordan" 
+
+
+Guide to Function Argument Unpacking in Python # 1492
+anytime you do unpacking you will be working with tuples.
+
+def greeting(*args):
+  print('Hi ' + ' '.join(args))
+
+
+greeting('Kristine', 'M', 'Hudgens')
+greeting('Tiffany', 'Hudgens')
+
+
+def greeting(*names):
+  print('Hi ' + ' '.join(names))
+
+
+greeting('Kristine', 'M', 'Hudgens')
+greeting('Tiffany', 'Hudgens')
+
+
+def greeting(time_of_day, *args):
+  print(f"Hi {' '.join(args)}, I hope that you're having a good {time_of_day}")
+
+
+greeting('Afternoon', 'Kristine', 'M', 'Hudgens')
+greeting('Morning', 'Tiffany', 'Hudgens')
+
+
+Overview of Keyword Arguments in Python Functions # 1493
+
+
+Unpacking keyword arguments bring back a dictionary. 
+
+def greeting(**kwargs):
+  print(kwargs)
+
+
+greeting()
+greeting(first = 'Kristine', last = 'Hudgens')
+
+def greeting(**kwargs):
+  if kwargs:
+    print(f"Hi {kwargs['first']} {kwargs['last']}, have a great day!")
+  else:
+    print('Hi Guest!')
+
+
+greeting()
+greeting(first = 'Kristine', last = 'Hudgens')
+
+How to Combine All Argument Types in a Single Python Function # 1494
+
+def greeting(time_of_day, *args, **kwargs):
+  print(f"Hi {' '.join(args)}, I hope that you're having a good {time_of_day}.")
+
+  if kwargs:
+    print('Your tasks for the day are:')
+    for key, val in kwargs.items():
+      print(f'{key} -> {val}')
+
+
+greeting('Morning',
+         'Kristine', 'Hudgens',
+         first = 'Empty dishwasher',
+         second = 'Take pupper out',
+         third = 'math homework')
+
+
+Probably watch this last video again combining all these arguments.
+
+
+
+

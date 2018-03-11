@@ -1,0 +1,23 @@
+Section Introduction for Supervised Learning Algorithms # 1447
+
+The algorithim is supervised. So you are giving guidience to the aglorithm. 
+
+Supervised has many branches.
+
+Classifications, Regression.
+There is a little overlap of the two.
+
+
+Classification - What is it?
+
+great example for this. Is Spam.
+You want to know if an email is coming in as spam or not.
+
+
+
+Regression - What should it be?
+
+Building out sometime of home management system.
+You want the abilitiy to predict how much a listing should be for
+So based off all the factors it builds out the system so when a new home goes on the market your system can make a prediction.
+Zillio (example)
